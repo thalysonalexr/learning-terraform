@@ -11,3 +11,7 @@ variable "content" {
 output "id-do-arquivo" {
   value = resource.local_file.helloworld.id
 }
+
+output "content" {
+  value = var.content
+}
