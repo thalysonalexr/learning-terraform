@@ -1,4 +1,6 @@
 resource "local_file" "helloworld" {
-  content = "Hello World!!!"
+  content = var.content
   filename = "${path.module}/hello.txt"
 }
+
+variable "content" {}
